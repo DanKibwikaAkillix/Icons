@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Signature</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .card_container {
+            height: 410px;
+            padding: 0;
+        }
+        .content_container {
+            padding: 0;
+            height: 300px;
+            display: flex;
+            width: 100%;
+        }
+        .user_container {
+            padding: 20px;
+            width: 25%;
+            box-sizing: border-box;
+        }
+        .user_profile {
+            width: 100%;
+            height: 120px;
+        }
+        .name h1 {
+            font-size: 22px;
+            font-weight: lighter;
+        }
+        .name p {
+            font-size: 18px;
+            background-color: #fafafa;
+            padding: 0;
+            border-radius: 12px;
+            color: #30acd3;
+            width: 70%;
+        }
+        .cell_email {
+            height: 150px;
+            padding: 20px 5px 2px 2px;
+        }
+        .phone p, .email p {
+            font-size: 14px;
+        }
+        .email a {
+            text-decoration: none;
+            color: black;
+        }
+        .social_media_container {
+            padding: 20px;
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img {
+            width: 280px;
+        }
+        .link_to_website {
+            padding: 10px 20px;
+            display: block;
+            background-color: #30acd3;
+            width: 100%;
+            box-sizing: border-box;
+            
+        }
+        .list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .list li {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-basis: 22%;
+            justify-content: center;
+        }
+
+        .list li a{
+            color: #fafafa;
+            text-decoration: none;
+        }
+        .slogan {
+            width: 100%;
+            background-color: #104195;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .supply, .maintain, .repair {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .maintain {
+            background-color: #30acd3;
+            border: solid 3px #fff;
+            border-radius: 18px;
+            height: 35px;
+            width:46%;
+        }
+        .content img {
+            margin-right: 10px;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .user_container {
+                width: 100%;
+                height: auto;
+            }
+            .user_profile {
+                height: auto;
+            }
+            .social_media_container {
+                width: 100%;
+            }
+            .list li {
+                flex-basis: 100%;
+                justify-content: flex-start;
+            }
+            .logo img {
+                width: 200px;
+            }
+            .slogan {
+                flex-direction: column;
+                height: auto;
+                height: 80px;
+                
+                
+            }
+            .supply, .repair {
+                width: 100%;
+            }
+            .maintain {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content_container {
+                flex-direction: column;
+            }
+            .user_container, .social_media_container {
+                width: 100%;
+            }
+            .list li {
+                flex-basis: 100%;
+                text-align: center;
+            }
+            .slogan {
+                flex-direction: column;
+                width: 100%;
+                height: 80px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card_container">
+        <div class="content_container">
+
+            <div class="user_container">
+                <div class="user_profile">
+                    <div class="name">
+                        <h1>Bill Cox</h1>
+                        <p>Executive Director</p>
+                    </div>
+                </div>
+
+                <div class="cell_email">
+                    <div class="phone">
+                        <p><img style="width:16px;" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png" alt=""> +27-63-116-7708</p>
+                        <p><img style="width:16px;" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png"> +243-82-79-49-179</p>
+                    </div>
+                
+                    <div class="email">
+                        <p><img style="width:16px;" src="https://www.citypng.com/public/uploads/preview/transparent-mail-email-address-round-outline-dark-blue-icon-701751695035099webygrlgqc.png" alt=""> <a href="mailto:bill@coxtrading.co.za">bill@coxtrading.co.za</a></p>
+                        <p><img style="width:16px;" src="https://www.citypng.com/public/uploads/preview/transparent-mail-email-address-round-outline-dark-blue-icon-701751695035099webygrlgqc.png" alt=""> <a href="mailto:cems.sarlu@gmail.com">cems.sarlu@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="width:2px; border-radius:12px; background-color: #fffffff6; box-shadow: 0px 0px 10px 2px #00000027; border: thin;">
+
+            <div class="social_media_container">
+                <div class="logo">
+                    <div style="text-align: center;">
+                        <img src="https://coxtrading.co.za/wp-content/uploads/2024/12/cox-logo-01-e1733932759478.png" alt="logo">
+                    </div>
+                </div>
+
+                <div class="link_to_website">
+                    <ul class="list">
+                        <li><a href="https://coxtrading.co.za/"><img style="width: 14px;" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Favicon.ico.png" alt="website"> https://coxtrading.co.za/</a></li>
+                        <li><a href="https://www.linkedin.com/in/bill-cox23/"><img style="width: 14px;" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Linkedin-logo-blue-In-square-40px.png" alt="linkedin"> LinkedIn</a></li>
+                        <li><a href="https://www.facebook.com/people/Cox-Engineering-Mining-Services/61555582483232/"><img style="width: 14px;" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/FB_Logo_PNG.png" alt="facebook"> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/thedoncox/"><img style="width: 14px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="instagram"> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="slogan" style="width:100%; border-radius:1px; background-color: #172a4b;  display: flex; justify-content: space-between; align-items: center; ">
+            <div class="supply" style="width:27%; height: 40px; display: flex; justify-content: center; align-items: center;">
+                <div class="content" style="display: flex; align-items: center; justify-content: center; text-align: center;">
+                    <img style="width:16px; margin-right: 10px;" src="https://raw.githubusercontent.com/DanKibwikaAkillix/Icons/refs/heads/main/icons8-worldwide-delivery-80.png" alt="">
+                    <p style="color: #fff; padding: 3px; margin: 0; font-size: 10px;">SUPPLY</p>
+                </div>
+            </div>
+
+            <div class="maintain" style=" border-radius:18px; background-color: #30acd3; height: 35px; border: solid 3px #fff; display: flex; justify-content: center; align-items: center;">
+                <div class="content" style="display: flex; align-items: center; justify-content: center; text-align: center;">
+                    <img style="width:16px; margin-right: 10px;" src="https://raw.githubusercontent.com/DanKibwikaAkillix/Icons/refs/heads/main/icons8-hotline-48.png" alt="">
+                    <p style="color: #fff; padding: 3px; margin: 0; font-size: 10px;">MAINTAIN</p>
+                </div>
+            </div>
+
+            <div class="repair" style="width:27%; height: 40px; display: flex; justify-content: center; align-items: center;">
+                <div class="content" style="display: flex; align-items: center; justify-content: center; text-align: center;">
+                    <img style="width:12px; margin-right: 10px;" src="https://raw.githubusercontent.com/DanKibwikaAkillix/Icons/refs/heads/main/icons8-repair-50.png" alt="">
+                    <p style="color: #fff; padding: 3px; margin: 0; font-size: 10px;">REPAIR</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
